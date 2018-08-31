@@ -2,8 +2,7 @@
  - name: This will install application
    yum: name={{item}} state=latest
    with_items: "{{ install }}"
-   
-  notify: 
+   notify: 
    - restart apache2
 #
 # - name: start apache2

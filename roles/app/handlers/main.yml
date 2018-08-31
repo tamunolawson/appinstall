@@ -1,3 +1,4 @@
 ---
+  notify:
  - restart apache2
   service: name=httpd state=started

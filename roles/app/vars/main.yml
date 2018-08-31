@@ -2,3 +2,5 @@
  install:
    - httpd
    - mysql
+   - nginx
+   - php

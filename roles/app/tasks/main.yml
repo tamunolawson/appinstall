@@ -3,7 +3,8 @@
    yum: name={{item}} state=latest
    with_items: "{{ install }}"
    
-   notify: restart apache2
+  notify: 
+   - restart apache2
 #
 # - name: start apache2
 #   service: name=httpd state=started

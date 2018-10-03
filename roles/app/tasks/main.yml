@@ -1,5 +1,5 @@
 ---
  - name: This will install application
-   yum: name={{item}} state=latest
+   yum: name={{item}} state=absent
    with_items: "{{ install }}"
    notify: restart apache2

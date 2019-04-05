@@ -3,3 +3,4 @@
    yum: name={{item}} state=absent
    with_items: "{{ install }}"
    notify: restart apache2
+...
